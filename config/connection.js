@@ -1,5 +1,3 @@
-// Set up MySQL connection.
-
 //dependencies
 const mysql = require('mysql');
 require("dotenv").config();
