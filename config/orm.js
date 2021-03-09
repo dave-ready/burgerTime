@@ -1,6 +1,5 @@
 const connection = require('./connection.js');
 
-//function for SQL syntax to add ?'s in query
 const printQuestionMarks = (num) => {
   const arr = [];
 
@@ -82,7 +81,7 @@ const orm = {
     },
     delete(table, condition, cb) {
       let queryString = `DELETE FROM ${table}`;
-      queryString += ' WHERE ';
+      queryString += ' WHERE '; 
       queryString += condition;
   
       connection.query(queryString, (err, result) => {
@@ -95,6 +94,6 @@ const orm = {
     },
   };
   
-  // Export the orm object for the model (burger.js).
+  // Export the orm burger.js
   module.exports = orm;
   

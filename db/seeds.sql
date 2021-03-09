@@ -1,12 +1,12 @@
 INSERT INTO burgers (burger_name) 
-VALUES ('Molly');
+VALUES ('Hamburger');
 INSERT INTO burgers (burger_name) 
-VALUES ('Charlie');
+VALUES ('Cheeseburger');
 INSERT INTO burgers (burger_name, devoured) 
-VALUES ('Poppy', true);
+VALUES ('Poppy Seed Burger', true);
 INSERT INTO burgers (burger_name, devoured) 
-VALUES ('Oscar', true);
+VALUES ('Oscar Burger', true);
 INSERT INTO burgers (burger_name, devoured) 
-VALUES ('Smudge', true);
+VALUES ('Spam Burger', true);
 INSERT INTO burgers (burger_name) 
-VALUES ('Daisy');
+VALUES ('Bacon Burger');
