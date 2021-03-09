@@ -1,4 +1,3 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
 document.addEventListener('DOMContentLoaded', (event) => {
   if (event) {
     console.info('DOM loaded');
@@ -51,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
-        burger_name: document.getElementById('burger').value.trim(),
+        burger_name: document.getElementById('bu').value.trim(),
         devoured: document.getElementById('devoured').checked,
       };
 
@@ -67,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body: JSON.stringify(newBurger),
       }).then(() => {
         // Empty the form
-        document.getElementById('burger').value = '';
+        document.getElementById('bu').value = '';
 
         // Reload the page so the user can see the new quote
         console.log('Created a new burger!');
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   // DELETE
-  const deleteBurgerBtns = document.querySelectorAll('.delete-cat');
+  const deleteBurgerBtns = document.querySelectorAll('.delete-burger');
 
   // Set up the event listeners for each delete button
   deleteBurgerBtns.forEach((button) => {
