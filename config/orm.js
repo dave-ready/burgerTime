@@ -30,8 +30,8 @@ const objToSql = (ob) => {
   //Create orm object for all our SQL statement functions.
 
 const orm = {
-    all(tableInput, cb) {
-      const queryString = `SELECT * FROM ${tableInput};`;
+    all(table, cb) {
+      const queryString = `SELECT * FROM ${table};`;
       connection.query(queryString, (err, result) => {
         if (err) {
           throw err;
