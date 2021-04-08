@@ -32,4 +32,7 @@
   ## Contact
   - Github Username: https://github.com/dave-ready/burgerTime
   - E-mail: davis_ready@hotmail.com
+
+  ##Screenshot of the deployed app
+  <img width="970" alt="burgerAppscreenshot" src="https://user-images.githubusercontent.com/73320561/114074785-c395cc00-9872-11eb-808e-94aab9184b24.png">
   
