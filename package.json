@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/dave-ready/burgerTime#readme",
   "dependencies": {
+    "exphbs": "^1.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.1",
+    "express-handlebars": "^5.3.0",
+    "heroku": "^7.47.12",
     "mysql": "^2.18.1"
   },
   "devDependencies": {}
