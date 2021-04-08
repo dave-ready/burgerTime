@@ -1,10 +1,7 @@
 //dependencies
 const mysql = require('mysql');
-const exphbs = require('express-handlebars');
-const express = require('express');
 require("dotenv").config();
 
-const app = express();
 
 var connection;
 
@@ -29,12 +26,6 @@ connection.connect((err) => {
   console.log(`connected as id ${connection.threadId}`);
 });
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
-
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 // Export connection for ORM
 module.exports = connection;
