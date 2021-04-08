@@ -15,12 +15,27 @@ router.get('/', (req, res) => {
   });
 });
 
+//router.post("/api/burgers", (req, res) => {
+//  burger.insertOne(req.body.burger_name, (result) => {
+//    res.json(result);
+//  });
+//});
+
+
 router.post('/api/burgers', (req, res) => {
   burger.create(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
     res.json({ id: result.insertId });
   });
 });
 
+//router.put("/api/burgers/:id", (req, res) => {
+//  burger.updateOne(req.params.id, (result) => {
+//    if (result.changedRows === 0) {
+//      return res.status(404).end();
+//    }
+//    res.status(200).end();
+//  });
+//});
 router.put('/api/burgers/:id', (req, res) => {
   const condition = `id = ${req.params.id}`;
 
@@ -39,6 +54,8 @@ router.put('/api/burgers/:id', (req, res) => {
     }
   );
 });
+
+
 
 router.delete('/api/burgers/:id', (req, res) => {
   const condition = `id = ${req.params.id}`;
